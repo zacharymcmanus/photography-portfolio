@@ -4,14 +4,6 @@
     margin: 0;
 }
 
-/* .container {
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-} */
-
 .container {
     width: 90%;
     max-width: 120rem;
@@ -96,10 +88,6 @@ a:hover {
     padding-bottom: 5px;
 }
 
-.photo-gallery img:hover {
-    opacity: 0.5;
-    transition: 0.9s;
-}
 /*End portfolio*/
 
 /* Mobile Menu */
@@ -343,7 +331,7 @@ a:hover {
     border-radius: 26.5px;
     background-color: #45A29E;
     border: 1px solid #45A29E;
-    box-shadow: 0 16px 22px -17px #03153b;
+    box-shadow: 0 16px 22px -17px #1F2833
     color: #fff;
     cursor: pointer;
     font-size: 16px;
@@ -358,7 +346,7 @@ a:hover {
 
 .floating-btn:hover {
     background-color: #ffffff;
-    color: #001f61;
+    color: #1F2833
 }
 
 .floating-btn:focus {
