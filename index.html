@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Zachary McManus Photography</title>
+	<!-- Emoji Rel Icon -->
+	<link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/camera-with-flash_1f4f8.png">
+	<!-- Main Stylesheet  -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<!-- jQuery  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('.toggle').on('click', function() {
+				if ($('.item').hasClass('active')) {
+					$('.item').removeClass('active');
+				} else {
+					$('.item').addClass('active');
+				}
+			})
+		}) 
+	</script>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul class="menu">
+				<li class="logo"><a href="#">Zachary McManus <span>Photography</span></a></li>
+				<li class="item"><a class="active-link" href="#">Portfolio</a></li>
+				<li class="item"><a href="#">Services</a></li>
+				<li class="item"><a href="#">About</a></li>
+				<!-- <li class="item button secondary"><a href="#">Sign Up</a></li> -->
+				<li class="toggle"><span class="bars"></span></li>
+			</ul>
+		</nav>
+	
+		<section class="portfolio" id="portfolio">
+			<div class="photo-gallery">
+				<div class="two-col">
+					<img src="./images/1.jpg" alt="">
+					<img src="./images/2.jpg" alt="">
+				</div>
+				<div class="three-col">
+					<img src="./images/4.jpg" alt="">
+					<img src="./images/5.jpg" alt="">
+					<img src="./images/22.jpg" alt="">
+				</div>
+				<div class="two-col">
+					<img src="./images/9.jpg" alt="">
+					<img src="./images/10.jpg" alt="">
+				</div>
+				<div class="three-col">
+					<img src="./images/6.jpg" alt="">
+					<img src="./images/7.jpg" alt="">
+					<img src="./images/8.jpg" alt="">
+				</div>
+				<div class="two-col">
+					<img src="./images/14.jpg" alt="">
+					<img src="./images/15.jpg" alt="">
+				</div>
+				<div class="two-col">
+					<img src="./images/18.jpg" alt="">
+					<img src="./images/19.jpg" alt="">
+				</div>
+				<div class="three-col">
+					<img src="./images/30.jpg" alt="">
+					<img src="./images/31.jpg" alt="">
+					<img src="./images/32.jpg" alt="">
+				</div>
+				<div class="two-col">
+					<img src="./images/3.jpg" alt="">
+					<img src="./images/27.jpg" alt="">
+				</div>
+				<div class="three-col">
+					<img src="./images/20.jpg" alt="">
+					<img src="./images/21.jpg" alt="">
+					<img src="./images/29.jpg" alt="">
+				</div>
+				<div class="two-col">
+					<img src="./images/16.jpg" alt="">
+					<img src="./images/17.jpg" alt="">
+				</div>
+				<div class="three-col">
+					<img src="./images/11.jpg" alt="">
+					<img src="./images/12.jpg" alt="">
+					<img src="./images/13.jpg" alt="">
+				</div>
+				<div class="two-col">
+					<img src="./images/23.jpg" alt="">
+					<img src="./images/24.jpg" alt="">
+				</div>
+				<div class="two-col">
+					<img src="./images/25.jpg" alt="">
+					<img src="./images/26.jpg" alt="">
+				</div>
+			</div>
+		</section>
+
+		<div class="social-panel-container">
+			<div class="social-panel">
+				<p>
+					Get in touch on
+				</p>
+				<ul>
+					<li>
+						<a href="https://twitter.com/zachary_mcmanus" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/zachary_mcmanus" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://facebook.com/zacharyamadomcmanus" target="_blank">
+							<i class="fab fa-facebook"></i> 
+						</a>    
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/zacharymcmanus" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<button class="floating-btn">Let's shoot!</button>
+
+		<footer class="copyright">
+			<p>&copy; 2020 Zachary McManus Photography</p>
+		</footer>
+
+	</div>
+	<script>
+		const floating_btn = document.querySelector('.floating-btn');
+		const close_btn = document.querySelector('.close-btn');
+		const social_panel_container = document.querySelector(
+			'.social-panel-container'
+		);
+
+		floating_btn.addEventListener('click', () => {
+			social_panel_container.classList.toggle('visible');
+		});
+
+		close_btn.addEventListener('click', () => {
+			social_panel_container.classList.remove('visible');
+		});
+	</script>
+</body>
+</html>
